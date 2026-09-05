@@ -17,7 +17,8 @@ var name = "Bob"; // Valid with var (overwrites quietly)
 
 let age = 20;
 //let age = 25; //  Uncaught SyntaxError: Identifier 'age' has already been declared
-
+// function scoped : var is a function scoped that's mean it is accessible everywhere within the function
+// block scoped : let is a block scoped . that's mean it is accesible only within curly braces'{}'
 function start() {
     if (true) {
         var b = 45; // Function-scoped: Limited to start()
@@ -31,3 +32,5 @@ function start() {
 start();
 
 console.log(b); // Error! 'var b' cannot leave the start() function.
+
+// learn about the function scoped and block scoped properly
